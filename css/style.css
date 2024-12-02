@@ -626,10 +626,13 @@ input {
 .team-item:hover .team-item-description-title {
   color: whitesmoke;
 }
+.team-item-description-title{
+  margin-top:10px;
+}
 .team-item-description-p {
   text-transform: uppercase;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 17px;
   color: whitesmoke;
 }
 .team-item:hover .team-item-description-p {

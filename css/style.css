@@ -1,0 +1,717 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  height: 1000vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #19305c;
+  overflow: auto;
+  position: fixed;
+  z-index: 3;
+}
+.header-home-icon {
+  float: left;
+  padding: 11px 30px;
+  color: aliceblue;
+  font-size: 27px;
+}
+.header-search {
+  float: left;
+}
+.header-list {
+  float: right;
+  padding: 14px 46px;
+}
+.header-list li {
+  display: inline-block;
+  margin: 0px 10px;
+  text-transform: capitalize;
+}
+.header-list li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.header-search {
+  position: relative;
+  padding: 10px 0px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+}
+.header-search i {
+  position: absolute;
+  top: 17;
+  left: 10;
+}
+.hero-imge-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../imges/1426898.jpg);
+  background-size: cover;
+}
+.hero-imge-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #274d609a;
+}
+.hero-imge-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-imge-text-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 0px;
+}
+.hero-imge-text-p {
+  font-size: 20px;
+  color: #333334;
+  padding: 10px 0px 20px 0px;
+}
+.hero-imge-text-btn {
+  color: #fff;
+  width: 115px;
+  height: 50px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 17px;
+  background-color: #19305c;
+  font-weight: bolder;
+}
+.btn2 {
+  background-color: #fff;
+  color: #000;
+}
+.hero-imge-text-btn:hover {
+  opacity: 0.6;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #b0c4de;
+}
+.welcoming-content {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  overflow: auto;
+}
+.welcoming-container-line {
+  width: 200px;
+  height: 4px;
+  margin: 4px auto;
+  background-color: #3e159d;
+}
+.welcome-title {
+  text-transform: uppercase;
+  font-size: 37px;
+  padding-top: 80px;
+}
+.welcome-title-description {
+  padding-bottom: 80px;
+}
+.welcoming-container-content {
+  width: 27%;
+  height: 225px;
+  border: 1px solid #3e159d;
+  border-radius: 10px;
+  float: left;
+  position: relative;
+}
+.welcoming-container-content:after,
+.offer-item:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.welcoming-container-content:hover::after,
+.offer-item:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color:#3e159d68;
+  opacity: 0.4;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+.second {
+  margin: 0px 9.2%;
+}
+.PEN,
+.project,
+.atom {
+  color: #4c00ff;
+  font-size: 30px;
+  padding: 22px 0px;
+}
+.welcoming-container-content-title {
+  padding: 3px 0px;
+  font-size: 27px;
+  text-transform: capitalize;
+}
+.welcoming-container-content:hover .welcoming-container-content-title {
+  transition: all 0.2s;
+  color: whitesmoke;
+}
+.welcoming-container-content-p {
+  color: #333334;
+  padding: 18px 0px;
+  font-size: 15px;
+}
+.welcoming-container-content:hover .welcoming-container-content-p {
+  color: #7af8f2;
+}
+.welcoming-container-content-a {
+  display: inline-block;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 8px 0px;
+}
+.featured-content {
+  width: 100%;
+  height: 110vh;
+  overflow: auto;
+  text-align: center;
+  background-color: #2f3a50d6;
+}
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4,
+.feature-5,
+.feature-6 {
+  width: 24%;
+  height: 195px;
+  float: left;
+  margin-top: 1.5%;
+  position: relative;
+}
+.feature-1 {
+  background: url(../imges/book-business-drawing-education.jpg);
+  background-size: cover;
+}
+.feature-2 {
+  background: url(../imges/6367122.jpg);
+  background-size: cover;
+}
+.feature-3 {
+  background: url(../imges/sith-clone-trooper-classroom-clocks-wallpaper-preview.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.feature-4 {
+  background: url(../imges/library-books-knowledge-information.jpg);
+  background-size: cover;
+}
+.feature-5 {
+  background: url(../imges/classroom-school-education-learning.jpg);
+  background-size: cover;
+}
+.feature-6 {
+  background: url(../imges/writing-cursive-pen-math.jpg) ;
+  background-size: cover;
+}
+.feature-2,
+.feature-5 {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.feature-1,
+.feature-4 {
+  margin-left: 14%;
+}
+.feature-title {
+  color: whitesmoke;
+  padding-bottom: 30px;
+}
+.feature-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1f1e1e8e;
+  position: absolute;
+  visibility: hidden;
+}
+.feature-1:hover .feature-overlay,
+.feature-2:hover .feature-overlay,
+.feature-3:hover .feature-overlay,
+.feature-4:hover .feature-overlay,
+.feature-5:hover .feature-overlay,
+.feature-6:hover .feature-overlay {
+  visibility: visible;
+}
+.feature-overlay-description-title {
+  color: rgb(199, 193, 193);
+  font-size: 38px;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+.line2 {
+  margin-top: -25px;
+  width: 120px;
+  background-color: whitesmoke;
+}
+.feature-overlay-description-p {
+  margin: 20px 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #0055ff;
+}
+.feature-overlay-description a {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-color: #19305c;
+  border-radius: 12px;
+}
+.feature-overlay-description i {
+  color: whitesmoke;
+  font-size:18px;
+  margin-left: 2px;
+  line-height: 40px;
+}
+.offer-content {
+  width: 100%;
+  height: 120vh;
+  text-align: center;
+  overflow: auto;
+  background-color: #b0c4de;
+}
+.offer-item {
+  width: 22%;
+  height: 200px;
+  background-color: #f5f5f5;
+  border: 2px solid cadetblue;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  margin-top: 40px;
+}
+.first-item {
+  margin-left: 140px;
+}
+.second-item {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.offer-item p {
+  width: 80%;
+  text-align: left;
+  color: rgb(14, 149, 179);
+  font-size: 16px;
+  margin: 10px 50px 60px 50px;
+}
+.offer-item-title {
+  width: 80%;
+  text-align: left;
+  font-size: 22px;
+  margin: 27px 50px 0px 50px;
+}
+.offer-item:hover .offer-item-title {
+  color: #0055ff;
+}
+.offer-item:hover .offer-item-p {
+  color: #3a3a3a;
+}
+.offer-item a {
+  color: #b0c4de;
+  font-size: 40px;
+  position: absolute;
+  top: 25;
+  left: 10;
+}
+.container3 {
+  height: 290vh;
+  background: url(../imges/background-business-computer-connection.jpg) fixed;
+  background-size: cover;
+}
+.container3-overlay {
+  width: inherit;
+  height: inherit;
+  background-color: #1b1f2157;
+}
+.choose-content {
+  width: inherit;
+  height: 93vh;
+  background-color: #b0c4de;
+  overflow: auto;
+  position: relative;
+}
+.choose-decription {
+  width: 40%;
+  height: 80vh;
+  float: left;
+  margin: 0px 130px;
+}
+.choose-decription-title {
+  margin: 60px 0px 40px 0px;
+  text-transform: uppercase;
+  font-size: 37px;
+}
+.choose-line {
+  width: 140px;
+  margin: -35px 18px 50px 0px;
+}
+.choose-decription-p {
+  color: #949494;
+  margin-bottom: 60px;
+  font-size: 17px;
+}
+.choose-decription-lsit1 li {
+  margin-bottom: 25px;
+  color: #1f1f1fe5;
+  list-style: none;
+}
+.choose-decription-img {
+  width: 370px;
+  height: 470px;
+  float: left;
+  background: url(../imges/timetable-paper-ruler-geodreieck.jpg);
+}
+.choose-decription-lsit2 {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+.choose-decription-lsit2 li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #19305c;
+}
+.choose-decription-lsit2 .list-item1 {
+  color: #0055ff;
+}
+.choose-decription-lsit2 li:hover {
+  color: #0055ff;
+}
+.achievement-content {
+  width: inherit;
+}
+.achievement-item {
+  text-align: center;
+  float: left;
+  margin: 180px 80px;
+}
+.achievement-content-i {
+  color: #5284e2;
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+.achievement-item1 {
+  margin-left: 170px;
+}
+.achievement-content p {
+  font-size: 17px;
+  color: #f5f5f5;
+  margin-bottom: 8px;
+}
+.container4 {
+  height: 200vh;
+  background: url(../imges/bible-biblia-book-book-bindings.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.pricing-content {
+  width: 100%;
+  height: 130vh;
+  text-align: center;
+  overflow: auto;
+  background-color: #b0c4de;
+}
+.pricing-title {
+  margin-top: 35px;
+}
+.pricing-item {
+  width: 21%;
+  height: 380px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  float: left;
+  position: relative;
+}
+.pricing-item:after,
+.team-item:after,
+.news-item:after{
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #3e159d68;
+  transition: all 0.5s;
+  opacity: 0.4;
+}
+.pricing-item:hover::after,
+.team-item:hover::after,
+.news-item:hover::after{
+  width: 100%;
+  height: 100%;
+  background-color: #3e159d68;
+  opacity: 0.4;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.front {
+  margin-left: 14.3%;
+}
+.back {
+  margin: 0% 3.5%;
+}
+.pricing-item-numbers {
+  width: 100px;
+  height: 98px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  margin: 20px auto;
+}
+.pricing-item:hover .pricing-item-numbers {
+  border: 2px solid #0055ff;
+}
+.pricing-item:hover .pricing-item-title {
+  color: #0055ff;
+}
+.pricing-item-title {
+  margin-top: 20px;
+}
+.pricing-item-numbers-p1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+.pricing-item-numbers-p2 {
+  font-size: 18px;
+}
+.pricing-item-p {
+  margin: 20px 0px;
+}
+.pricing-title, 
+.team-title,
+.Lasts-title,
+.team-item-description-title  {
+  color: #000;
+}
+.pricing-line {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.pricing-item-btn {
+  width: 170px;
+  height: 35px;
+  border: 2px solid #0055ff;
+  border-radius: 12px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 83%;
+  left: 22%;
+  z-index: 1;
+}
+.information-item {
+  overflow: auto;
+}
+.information-item-part {
+  width: 34%;
+  float: left;
+  margin: 100px 30px;
+  text-align: left;
+}
+.part1 {
+  margin-left: 190px;
+}
+.information-item-person {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  float: left;
+  margin: 20px 20px 0px 0px;
+  background-size: cover;
+}
+.person1 {
+  background-image: url(../imges/front-view-black-man-holding-old-video-camera_23-2149415765.avif);
+}
+.person2 {
+  background-image: url(../imges/medium-shot-smiley-man-applauding_23-2149636271.avif);
+}
+.information-item-description-title {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.information-item-description-p {
+  color: #0055ff;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.information-item-part2-p {
+  width: 100%;
+  font-size: 17px;
+  margin: 30px auto;
+  text-transform: capitalize;
+  color: #f5f5f5;
+  line-height: 27px;
+}
+.team-content {
+  width: 100%;
+  height: 92vh;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+}
+.team-item {
+  width: 24%;
+  height: 320px;
+  background-color: #49494992;
+  float: left;
+  border-radius: 14px;
+  margin-top: 30px;
+  position: relative;
+}
+.first-TEAM {
+  margin-left: 140px;
+}
+.second-team {
+  margin: 30px 50px;
+}
+.team-item-pic {
+  width: 250px;
+  margin: auto;
+  position: relative;
+  padding-top: 20px;
+}
+.team-item-pic-overlay-icons {
+  width: 100%;
+  height: 92%;
+  position: absolute;
+  top: 20;
+  left: 0;
+  visibility: hidden;
+}
+.team-item:hover .team-item-pic-overlay-icons {
+  visibility: visible;
+  opacity: 1;
+  background-color: #1a191986;
+}
+.team-item-pic-overlay-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+  margin-left: auto;
+}
+.team-item-pic-overlay-icons a i {
+  line-height: 40px;
+  font-size: 20px;
+  color: #5284e2;
+}
+.team-item:hover .team-item-description-title {
+  color: whitesmoke;
+}
+.team-item-description-p {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+.team-item:hover .team-item-description-p {
+  color: #00aeff;
+}
+.news-content {
+  height: 130vh;
+  text-align: center;
+  overflow: auto;
+}
+.news-item {
+  width: 24%;
+  height: 80vh;
+  border: 2px solid darkblue;
+  border-radius: 12px;
+  float: left;
+  position: relative;
+}
+.news-item:hover .news-item-title {
+  transition: all 0.2s;
+  color: whitesmoke;
+}
+.news-item:hover .news-item-p,
+.news-item:hover .news-item-span  {
+  transition: all 0.2s;
+  color: #0055ff;
+}
+.second-news {
+  margin: 0px 50px;
+}
+.Lasts-line {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.news-item img {
+  margin: 20px 30px;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.news-item span {
+  display: inline-block;
+  margin: 290px 12px 0px 0px;
+}
+.news-item p {
+  margin: 20px 0px;
+}
+.news-item a {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+.footer-content {
+  width: 100%;
+  height: 55vh;
+  background-color: #2f3a50;
+  text-align: center;
+}
+.footer-content img {
+  margin: 30px 0px 20px 0px;
+  border-radius: 12px;
+}
+.footer-content-icons {
+  display: inline-block;
+  font-size: 30px;
+  color: #5284e2;
+  margin: 0px -10px 15px 0px;
+}
+.footer-content-icons i {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  line-height: 50px;
+  background-color: #000;
+}
+.footer-content i:hover {
+  background-color: #f5f5f5;
+}
+.footer-content p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #f5f5f5;
+}
